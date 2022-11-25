@@ -1,0 +1,90 @@
+.projects-one {
+    width: 100vw;
+    display: flex;
+    background: url(../../../public/assets/researchpaper.jpg);
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+.projects-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bold {
+    font-weight: 800;
+    flex: 1;
+    text-transform: capitalize;
+}
+
+.light {
+    font-weight: 400;
+    flex: 3;
+}
+
+@media screen and (max-width:800px) {
+    .projects-one {
+        height: 50vh;
+    }
+
+    .projects-wrapper {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .bold {
+        font-size: 2rem;
+        margin-top: 2rem;
+
+    }
+
+    .light {
+        flex: 1;
+        margin-top: -3rem;
+    }
+}
+.research-two{
+    max-width: 95vw;
+    margin-left: 2.5vw;
+}
+.research-preview{
+    display:  flex;
+    flex-direction: row;
+    width: 90vw;
+    gap: 2rem;
+    padding:  2rem 0;
+}
+.anti{
+    background-color: rgb(214, 214, 214)!important;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding: 20px
+}
+.research-text-content{
+    display:  flex;
+    flex-direction: column;
+    max-width: 40vw;
+    align-items: center;
+}
+@media screen and (max-width:800px){
+    .research-preview{
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem ;
+    }
+    .research-img{
+        max-width: 90%;
+    }
+    .research-text-content{
+        max-width: 90%;
+        
+    }
+}
+.research-container>a{
+    color: black;
+}
