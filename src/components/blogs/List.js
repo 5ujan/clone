@@ -2,10 +2,9 @@ import React from 'react'
 import data from '../../data'
 import Preview from '../home/Preview'
 import { Link } from 'react-router-dom'
-import { useGlobalContext } from '../../context'
 
 const List=()=>{
-    const {setType}=useGlobalContext()
+
     return <section>
         <div className="list">
         <div className="listcontent">
@@ -15,9 +14,7 @@ const List=()=>{
                     return (
                       <Link
                         key={item.id}
-                        onClick={() => {
-                          setType("blog");
-                        }}
+                    
                         to={`/blogs/${item.id}`}
                       >
                         <Preview {...item}></Preview>{" "}

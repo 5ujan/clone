@@ -26,19 +26,19 @@ function App() {
           <Route exact path="/blogs" element={<Blogs></Blogs>}></Route>
           <Route exact path="/research" element={<Research></Research>}></Route>
           <Route
-            path={`/courses/course`}
+            path={`/:mode/course`}
             element={<SinglePage></SinglePage>}
           ></Route>
           <Route
-            path={`/blogs/:id/`}
+            path={`/:mode/:id/`}
             element={<SinglePage></SinglePage>}
           ></Route>
           <Route
-            path={`/research/:id`}
+            path={`/:mode/:id`}
             element={<SinglePage></SinglePage>}
           ></Route>
           <Route
-            path={`/projects/:id`}
+            path={`/:mode/:id`}
             element={<SinglePage></SinglePage>}
           ></Route>
         </Routes>

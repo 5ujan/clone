@@ -2,10 +2,10 @@ import React from "react";
 import { FaEye } from "react-icons/fa";
 import { IoCalendarNumberOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
-import { useGlobalContext } from "../../context";
+
 
 const Face = () => {
-  const {setType}=useGlobalContext()
+
   return (
     <section>
       <div className="face">
@@ -18,7 +18,7 @@ const Face = () => {
             />
           </div>
           <div className="facearticlewrapper">
-            <Link to="/blogs/0" onClick={()=>setType('blog')} style={{ textDecoration: "none" }}>
+            <Link to="/blogs/0" style={{ textDecoration: "none" }}>
               <div className="facearticle">
                 <h1
                   style={{

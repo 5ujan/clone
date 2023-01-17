@@ -1,5 +1,5 @@
 import React from 'react'
-import { useGlobalContext } from './context'
+// import { useGlobalContext } from './context'
 import data from './data'
 import { FaEye } from 'react-icons/fa'
 import { IoCalendarNumberOutline } from "react-icons/io5";
@@ -10,16 +10,17 @@ import { useParams } from 'react-router-dom';
 
 
 const SinglePage=()=>{
-  const {type}=useGlobalContext()
+  // const {type}=useGlobalContext()
   const params = useParams();
   const iiiiid = params.id;
+  const mode= params.mode;
 
     let subdata;
   
-    if (type==='blog') {subdata=data.blogs[parseInt(iiiiid)]}
-    else if (type==='research') {subdata=data.research[parseInt(iiiiid)]}
-    else if (type==='course') {subdata=data.learn[0]}
-    else if (type==='project') {subdata=data.projects[parseInt(iiiiid)]}
+    if (mode==='blogs') {subdata=data.blogs[parseInt(iiiiid)]}
+    else if (mode==='research') {subdata=data.research[parseInt(iiiiid)]}
+    else if (mode==='courses') {subdata=data.learn[0]}
+    else if (mode==='projects') {subdata=data.projects[parseInt(iiiiid)]}
     
 
 
@@ -29,7 +30,7 @@ const SinglePage=()=>{
     return (
       <section>
         <div className="singlepage">
-          <div className="type">  {type}</div>
+          <div className="type">  {mode==='research'?mode:mode.substring(0,mode.length-1)}</div>
           <div className="header">
             <div className="details">
               <div className="author">

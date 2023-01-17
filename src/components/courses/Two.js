@@ -2,12 +2,12 @@ import React from "react";
 import Preview from "../home/Preview";
 import data from '../../data'
 import { Link } from "react-router-dom";
-import { useGlobalContext } from "../../context";
+
 
 
 const Two = () => {
   const subdata=data.learn[0]
-  const {setType}=useGlobalContext()
+
   
   return (
     <section>
@@ -32,7 +32,7 @@ const Two = () => {
             className="article-container"
             style={{ display: "flex", margin: "2rem 0", gap: "2rem" }}
           >
-            <Link to='/courses/course' onClick={()=>{setType('course')}}>
+            <Link to='/courses/course'>
             <Preview {...subdata} importance={"special"}></Preview>
             </Link>
             
