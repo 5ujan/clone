@@ -15,7 +15,7 @@ const Overlay=()=>{
 }
 const Person=()=>{
     const personContainer = createRef()
-    const [hover, setHover] = useState(false)
+    // const [hover, setHover] = useState(false)
     return (
       <article
         className="person"
