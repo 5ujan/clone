@@ -50,3 +50,18 @@ h3{
         margin-bottom: 2rem
     }
 }   
+@media screen and (max-width:480px) {
+    .footer{
+        height: 90vh;
+    }
+    .footer-wrapper{
+        display: flex;
+        flex-direction: column;
+        margin-top: -17vh;
+
+    }
+    .footer-wrapper> article{
+        max-width: 90vw!important;
+    }
+    
+}
