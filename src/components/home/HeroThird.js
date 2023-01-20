@@ -20,7 +20,7 @@ const HeroThird=()=>{
               cumque adipisci non necessitatibus voluptatum corporis quo
               mollitia reprehenderit. Magni, earum neque. Lorem ipsum dolor!
             </p>
-            <p className="medium-text signature">-Abhishek Karna</p>
+            <p className="medium-text signature">Rick C137</p>
           </div>
           <img className="gm-image" src={"assets/gm.jpg"} alt="" />
         </div>
