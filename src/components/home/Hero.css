@@ -46,6 +46,13 @@ section{
         text-align: center;
     }
 }
+@media screen and (max-width:480px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        padding: 0 1rem;
+}
+}
 .hero-two{
     width: 100vw;
     height: 100vh;
@@ -171,6 +178,22 @@ section{
         width: 90vw;
     }
 }
+@media screen and (max-width:480px) {
+    .gm-image{
+        height: 50vh;
+    }
+    .hero-two{
+        height: 55vh;
+    }
+    .hero-two .container{
+        height: 50vh;
+        margin-top: 2vh;
+    }
+    .inner-container{
+        width: 100vw;
+        height: 50vh;
+    }
+}
 .hero-four{
     max-width: 95vw;
     display: flex;
@@ -215,6 +238,29 @@ section{
         margin: 1rem;
         max-width: 40vw;
         
+    }
+}
+@media screen and (max-width:480px){
+    .hero-four, .overlay{
+        height: 75vh;
+    }
+    .overlay{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 1rem;
+    }
+    .overlay>.large-text{
+        text-align: center;
+    }
+    .best-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .best-container .best-button{
+        max-width: 80vw;
+        width: 80vw!important;
     }
 }
 .centerer{
