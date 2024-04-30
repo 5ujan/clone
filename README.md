@@ -1,6 +1,6 @@
 # A static site I built to practise my frontend skills
 
-I used [Create React App](https://github.com/facebook/create-react-app) to bootstrap it
+I used [Create React App](https://github.com/facebook/create-react-app) to bootstrap it  
 Hosted at [Netlify](https://clone-final.netlify.app)
 
 ## Available Scripts
